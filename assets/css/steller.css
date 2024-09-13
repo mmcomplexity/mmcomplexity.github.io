@@ -11290,7 +11290,12 @@ pre {
 
 .header .container .infos p {
   margin-top: -5px;
-  font-size: 22px;
+  font-size: 27px;
+  color: bisque;
+}
+
+.header .container .infos a{
+  color: orange;
 }
 
 .header .container .infos .btn {
