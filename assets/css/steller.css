@@ -11281,8 +11281,8 @@ pre {
 }
 
 .header .container .infos .title {
-  margin-bottom: 0px;
-  font-size: 70px;
+  margin-bottom: 10px;
+  font-size: 60px;
   font-weight: bold;
   color: whitesmoke; 
   padding-top: 60px;
@@ -11354,7 +11354,7 @@ pre {
 
   .header .container .infos .subtitle {
     margin-bottom: 0;
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 50px;
   }
   
@@ -11427,12 +11427,17 @@ pre {
   .header .container .infos .subtitle {
     margin-bottom: 0;
     font-size: 25px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   
   .header .container .infos .title {
-    margin-bottom: 0px;
+    margin-bottom: 7px;
     font-size: 35px;
+  }
+  
+  .header .container .infos p {
+    font-size: 20px;
+    color: bisque;
   }
 
 }
