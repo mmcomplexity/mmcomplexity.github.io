@@ -61,9 +61,90 @@ with noncommutative arithmetic computation.
 <br>
 Title: On the Power of Homogeneous Algebraic Formulas
         <br><br>
-Abstract: Proving explicit lower bounds on the size of algebraic formulas is a long-standing open problem in the area of algebraic complexity theory. Recent results in the area have indicated a way forward for attacking this question: show that we can convert a general algebraic formula to a homogeneous algebraic formula with moderate blow-up in size, and prove strong lower bounds against the latter model. Here, a homogeneous algebraic formula F for a polynomial P is a formula in which all subformulas compute homogeneous polynomials. In particular, if P is homogeneous of degree d, F does not contain subformulas that compute polynomials of degree greater than d. We investigate the feasibility of the above strategy and prove a number of positive and negative results in this direction. Joint work with Hervé Fournier (Univ Paris-Cité), Nutan Limaye (IT-University of  Copenhagen) and Sébastien Tavenas (Université Savoie Mont-Blanc).
+Abstract: Proving explicit lower bounds on the size of algebraic formulas is a long-standing 
+        open problem in the area of algebraic complexity theory. Recent results in the area have 
+        indicated a way forward for attacking this question: show that we can convert a general 
+        algebraic formula to a homogeneous algebraic formula with moderate blow-up in size, and 
+        prove strong lower bounds against the latter model. Here, a homogeneous algebraic formula 
+        F for a polynomial P is a formula in which all subformulas compute homogeneous polynomials. In particular, if P is homogeneous of degree d, F does not contain subformulas that compute polynomials of degree greater than d. We investigate the feasibility of the above strategy and prove a number of positive and negative results in this direction. Joint work with Hervé Fournier (Univ Paris-Cité), Nutan Limaye (IT-University of  Copenhagen) and Sébastien Tavenas (Université Savoie Mont-Blanc).
 </li>
-      
+     <li><h3>Supratik Chakraborty</h3>
+<br>
+Title: On Tractable Representations for Boolean Functional Synthesis
+<br><br>
+Abstract: Given a relational specification \varphi(X, Y_1, ... Y_n), Boolean functional synthesis 
+       concerns the construction of Boolean functions F_1(X),  ... F_n(X)  such that 
+       \varphi(X, F_1, ... F_n) is semantically equivalent to \exists Y_1, ... Y_n \varphi(X, Y_1, ... Y_n).   
+       Such functions are also called Skolem functions, and their algorithmic synthesis has many 
+       applications, including in program synthesis, QBF-SAT certificate generation, circuit repair, 
+       reactive synthesis, planning and the like.  The synthesis problem is intractable unless 
+       long-standing complexity-theoretic conjectures are falsified.  Fortunately, polynomial-time 
+       synthesis algorithms can be designed if \varphi is represented in special normal forms.  
+       In this talk, we present some such normal forms, including those that were originally 
+       studied in AI and formal verification, and  others like Synthesis Negation Normal Form (SynNNF) and Subset And-Unrealizable Normal Form (SAUNF) that have arisen from our study of synthesis. We discuss properties of and relations between these normal forms, and show that every universal representation that admits polynomial-time synthesis is polynomially reducible to SAUNF.   We also sketch the idea behind compilation algorithms that convert a Boolean specification given as a circuit to SynNNF or SAUNF.  We conclude with 
+       empirical evidence that shows that such compilation algorithms hold promise in practice.</li> 
+   
+      <li><h3>Olaf Beyersdorff
+<br>
+Title: Proof complexity of quantified Boolean formulas
+<br><br>
+Abstract: Quantified Boolean formulas (QBF) have been intensely investigated in the past two decades, both from a practical point of view (QBF solving) as well as from a theoretical perspective (QBF proof complexity) with many fruitful connections between the two fields. 
+
+In this talk I will survey recent results from QBF proof complexity and explain relevant proof systems and lower bound techniques. Particular emphasis will be laid on the connections between QBF proof complexity and circuit complexity, whereby many lower bounds for QBF proof size can be obtained via circuit size lower bounds. 
+
+A second thread will be devoted to modelling QBF solvers by QBF proof systems. This sheds light on the relative strength of different QBF solving paradigms.
+
+The talk is based on joint work with many coauthors over the last year. In particular, many results have been obtained in collaboration with Meena Mahajan.</li>
+      <li><h3>Anil Shukla</h3>
+<br>
+Title: Extending Merge Resolution to a Family of QBF-Proof Systems.
+        <br><br>
+Abstract: Merge Resolution (MRes [Beyersdorff, Blinkhorn, and Mahajan, J. Autom. Reason.'2021]) is a recently introduced proof system for false quantified Boolean formulas (QBFs). Unlike other known QBF proof systems, it builds winning strategies for the universal player (countermodels) within the proofs as merge maps. Merge maps are deterministic branching programs in which isomorphism checking is efficient, as a result MRes is a polynomial time verifiable proof system.
+
+We introduce a family of proof systems MRes-R in which the information of countermodels are stored in any pre-fixed complete representation R. Hence, corresponding to each possible complete representation R, we have a sound and refutationally complete QBF-proof system in MRes-R. To handle these arbitrary representations, we introduce consistency checking rules in MRes-R instead of the isomorphism checking in MRes. As a result these proof systems are not polynomial time verifiable. 
+
+We relate these new systems with the implicit proof system from the algorithm in [Blinkhorn, Peitl. and Slivovsky, SAT.'2021], which was designed to solve DQBFs (Dependency QBFs) using MRes like clause-strategy pairs. We use the OBDD (Ordered Binary Decision Diagrams) representation and deduce that ordered versions of the proof systems in MRes-R along with some additional restrictions are polynomial time verifiable.
+
+Demonstrating the strength of these systems, we show that the regular versions of the systems in MRes-R are exponentially stronger than regular MRes. We also lift the lower bound result of regular MRes ([Beyersdorff et al. FSTTCS.'2020]) by showing that the completion principle formulas (CR_n) from [Jonata and Marques-Silva, Theor. Comput. Sci.'2015] which are shown to be hard for regular MRes in [Beyersdorff et al. FSTTCS.'2020], are also hard for any regular proof system in MRes-R. 
+
+This is a joint work with Sravanthi Chede (IIT Ropar).</li>
+      <li><h3>Dhara Thakkar</h3>
+<br>
+
+Title: On Computing Optimal Representations of Finite Groups
+        <br><br>
+Abstract: There are several ways to represent a group as an input to an algorithm, including the generator-realtor representation, the black-box group representation, the matrix group representation, the permutation group representation, and the Cayley table representation. The choice of representation significantly impacts the ease or difficulty of computational problems in groups. While studying algorithms for group theoretical problems, it is natural to study efficient representations of groups.
+
+In this talk, I will discuss two optimal representations of finite groups. More precisely, I will present (1) a polynomial time algorithm to find a minimum generating set of a group and (2) a randomized polynomial time algorithm that, given a group G without abelian normal subgroups, computes the smallest m such that G \leq Sm.
+
+The talk is based on the joint work with Bireswar Das, and Andrea Lucchini.
+</li>
+      <li><h3>Anuj Tawari</h3>
+<br>
+Title: Exactly k MSTs: How many vertices suffice?
+<br><br>
+Abstract:  In this work, we study the problem of finding a weighted undirected graph with
+ exactly $k$ minimum spanning trees (MSTs, in short) while minimizing the number of vertices.
+ While finding a graph with $k$ MSTs is easy, 
+finding such a graph with the minimum number of vertices remains an interesting open problem. 
+ In this work, we prove the following results which make further progress on this problem:
+
+    1. Large weights do not help in constructing a minimal weighted graph with a prime number of minimum spanning trees.
+    2. For $n\geq 6$ and $1 \leq k \leq n^2$, $n$ vertices suffice for constructing a graph with $k$ minimum spanning trees.
+    
+    I will also discuss connections with related  algebraic problems such as finding a small, symmetric matrix with 
+    a prescribed value of its determinant  and bounded integer entries.
+    
+    (Joint work with Apratim Dutta, Rahul Muthu, V. Sunitha).</li>
+      <li><h3>Jakob Nordstrom</h3>
+     <br> Title: Colouring is Hard on Average for Polynomial Calculus and Nullstellensatz 
+<br><br>
+Abstract: 
+
+We prove that polynomial calculus (and hence also Nullstellensatz) over any field requires linear degree to refute that sparse random regular graphs, as well as sparse Erdős-Rényi random graphs, are 3-colourable. Using the known relation between size and degree for polynomial calculus proofs, this implies strongly exponential lower bounds on proof size. It also means that algorithms based on Hilbert's Nullstellensatz or Gröbner bases must require exponential running time for almost all such graphs.
+
+This is joint work with Jonas Conneryd, Susanna F. de Rezende, Shuo Pang, and Kilian Risse that appeared at FOCS 2023.
+      </li>
     </ul>
   </body>
 </html>
