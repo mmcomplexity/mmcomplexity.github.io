@@ -226,105 +226,299 @@
         <div class="container mt-4">
             <div class="row text-md-left">
                 <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Schedule (<a href="abstracts.html">Titles and abstracts</a>)</h6>
-			
-                    <!-- <p class="subtitle">UI/UX Designer</p> -->
+                    <h6 class="title">Schedule</h6>
                     
                     <div class="conference-table-container">
                         <table>
-                        <colgroup>
-                            <col style="width:30%">
-                            <col style="width:70%">
+                            <colgroup>
+                                <col style="width:30%">
+                                <col style="width:65%">
+                                <col style="width:5%">
                             </colgroup>
-                        <thead>
-                           <tr>
-                              <th colspan="2">Day 1 : December 14</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>08:00 — 8:40 </td>
-                                <td>Registration </td>
-                             </tr>
-                             <tr>
-                                <td>08:45 — 9:00 </td>
-                                <td>Opening Remarks </td>
-                             </tr>
-                           <tr>
-                              <td>09:00 — 10:00 </td>
-                              <td>Invited talk 1: Madhu Sudan </td>
-                           </tr>
-                           <tr>
-                              <td>10:00 — 10:30</td>
-                              <td>Coffee break </td>
-                           </tr>
-                           <tr>
-                                <td>10:30 — 11:30 </td>
-                                <td>Invited talk 2: Sumegha Garg</td>
-                            </tr>
-                           <tr>
-                   <td>11.30-12:00 </td>
-                   <td>Contributed talk 1: <a href="https://www.imsc.res.in/ramya_c">C. Ramya</a></td>
-                   </tr>
-                   <tr>
-                   <td>12:00 - 12:30  </td>
-                       <td>Contributed talk 2: <a href="https://nitinsau.github.io/">Nitin Saurabh</a></td>
-               </tr>
-                <tr><td>12:30 - 14:00</td>
-                <td>Lunch break</td>
-                </tr>
-                <tr><td>14:00 - 15:00</td>
-                    <td>Invited talk 3: V. Arvind</td></tr>
-                <tr><td>15:00- 15:30</td><td>Coffee break</td></tr>
-                <tr><td>15:30 - 16:30</td><td>Invited talk 4: Srikanth Srinivasan</td></tr>
-                <tr><td>16:30-17:30 </td><td>(Informal) Milestones and Motifs session</td></tr>
-            </tbody>
-                
-                  <thead>
-                           <tr>
-                              <th colspan="2">Day 2 : December 15</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                <tr><td>9.00 – 10.00</td>
-                    <td>Invited talk 5: Supratik Chakraborty</td>
-                </tr>
-<tr><td>10.00 – 10.30</td>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Day 1 : December 14</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08:00 — 8:40</td>
+                                    <td>Registration</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>08:45 — 9:00</td>
+                                    <td>Opening Remarks</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>09:00 — 10:00</td>
+                                    <td>Invited talk 1: Madhu Sudan</td>
+                                    <td><label for="details1" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details1" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title: </em><strong>Proofs and Computation</strong><br>
+                                            <p>Abstract: Proofs have always gone hand in hand with the development of (the theory of) computation. The Turing Machine was conceived to generalize and extend Godel's incompleteness theorem. The P vs. NP question emerged in part out of an effort to understand the complexity of theorem-proving. And modern theories of optimization, cryptography and even aspects of quantum physics are intimately tied to novel notions associated with proofs such interaction and randomness. In this talk we will survey some of these classical connections as well as the more modern ones; and ponder some, as of yet unresolved, enigmas associated with proofs we use in day to day (mathematical) life.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 — 10:30</td>
+                                    <td>Coffee break</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 — 11:30</td>
+                                    <td>Invited talk 2: Sumegha Garg</td>
+                                    <td><label for="details2" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details2" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Hardness of Coin problem for Branching Programs</strong><br>
+                                            <p>Abstract: Given a sequence of n independent coin tosses, where the coin is biased towards either heads or tails with probability 1/2 + β, the goal of the coin problem is to determine which way the coin is biased. In this talk, we will survey the recent results for the space complexity of the coin problem in the streaming setting (both for the one-pass and multi-pass streaming). This corresponds to quantifying the width of a one-pass (or read-once) branching program solving the problem. The coin problem becomes more difficult as β becomes smaller.</p>
+                                            <p>Statistically, it can be solved whenever β = Ω(1/√n), using counting. We first show that for β = O(1/√n), counting is essentially optimal (equivalently, width poly(n) is necessary using an information-theoretic proof [BGW'20]. We extend this to even constant-pass programs [BGL+'24].</p>
+                                            <p>On the other hand, the coin problem only requires O(log n) width when β > 1/n^{0.306} (following low-width simulation of AND-OR tree of [Val'84]). Using a combinatorial proof [BGZ'21], we show that a width of poly(n) is necessary for one-pass streaming when β < 1/n^{0.33} (and this is tight).</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 — 12:00</td>
+                                    <td>Contributed talk 1: <a href="https://www.imsc.res.in/ramya_c">C. Ramya</a></td>
+                                    <td><label for="details3" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details3" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Lower Bounds for Planar Arithmetic Circuits</strong><br>
+                                            <p>Abstract: Arithmetic circuits are a natural computational model for computing multivariate polynomials over a field. Planar arithmetic circuits are circuits whose underlying graph is planar. The size of a circuit which is the number of vertices in the underlying graph is a fundamental parameter concerning circuits. In this talk, we will prove a super-linear lower bound on the size of planar arithmetic circuits computing an explicit bilinear form. More generally, we will walk-through the algebraic complexity of bilinear forms. Furthermore, Baur and Strassen(1983) showed that all the first order partial derivatives of a polynomial can be simultaneously computed with only a constant factor blow-up in size. We observe that an analogous statement does not hold in the case of planar circuits.</p>
+                                            <p>This talk is based on joint work with Pratik Shastri(IMSc).</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:00 — 12:30</td>
+                                    <td>Contributed talk 2: <a href="https://nitinsau.github.io/">Nitin Saurabh</a></td>
+                                    <td><label for="details4" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details4" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>On the composition of approximate degree</strong><br>
+                                            <p>Abstract: For any two Boolean functions f:{0,1}^n -> {0,1} and g:{0,1}^m->{0,1}, 
+                                            the composed function is defined as f o g (X1, X2, ... , Xn) = f(g(X1),g(X2),...,g(Xn)). 
+                                            A central question in complexity theory is to understand how complexity measures behave under composition.  
+                                            An immensely useful complexity measure associated with a Boolean function is its approximate degree. 
+                                            For a Boolean function f,  the least degree of a polynomial that pointwise approximates f within error 1/3 
+                                            is called the approximate degree of f. Let us denote it by adeg(f). 
+                                            The composition question for approximate degree posits that adeg(f o g) = \Theta(adeg(f) adeg(g)).  
+                                            In a seminal work, Sherstov (2013) showed the upper bound, i.e., adeg(f o g) = O(adeg(f) adeg(g)). 
+                                            However, there are only a few cases in which the matching lower bound has been established. 
+                                            In this talk we will see some recent attempts at addressing the lower bound question for some new classes of functions.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:30 — 14:00</td>
+                                    <td>Lunch break</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:00 — 15:00</td>
+                                    <td>Invited talk 3: V. Arvind</td>
+                                    <td><label for="details5" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details5" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Noncommutative Computation via Skew Polynomials</strong><br>
+                                            <p>Abstract: In this talk we will illustrate the application of skew polynomial rings in connection with noncommutative arithmetic computation.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15:00 — 15:30</td>
+                                    <td>Coffee break</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:30 — 16:30</td>
+                                    <td>Invited talk 4: Srikanth Srinivasan</td>
+                                    <td><label for="details6" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details6" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>On the Power of Homogeneous Algebraic Formulas</strong><br>
+                                            <p>Abstract: Proving explicit lower bounds on the size of algebraic formulas is a long-standing open problem in the area of algebraic complexity theory. Recent results in the area have indicated a way forward for attacking this question: show that we can convert a general algebraic formula to a homogeneous algebraic formula with moderate blow-up in size, and prove strong lower bounds against the latter model. Here, a homogeneous algebraic formula F for a polynomial P is a formula in which all subformulas compute homogeneous polynomials. In particular, if P is homogeneous of degree d, F does not contain subformulas that compute polynomials of degree greater than d. We investigate the feasibility of the above strategy and prove a number of positive and negative results in this direction. Joint work with Hervé Fournier (Univ Paris-Cité), Nutan Limaye (IT-University of Copenhagen) and Sébastien Tavenas (Université Savoie Mont-Blanc).</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>16:30 — 17:30</td>
+                                    <td>(Informal) Milestones and Motifs session</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Day 2 : December 15</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>09:00 — 10:00</td>
+                                    <td>Invited talk 5: Supratik Chakraborty</td>
+                                    <td><label for="details7" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details7" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>On Tractable Representations for Boolean Functional Synthesis</strong><br>
+                                            <p>Abstract: Given a relational specification \varphi(X, Y_1, ... Y_n), Boolean functional synthesis concerns the construction of Boolean functions F_1(X),  ... F_n(X)  such that \varphi(X, F_1, ... F_n) is semantically equivalent to \exists Y_1, ... Y_n \varphi(X, Y_1, ... Y_n). Such functions are also called Skolem functions, and their algorithmic synthesis has many applications, including in program synthesis, QBF-SAT certificate generation, circuit repair, reactive synthesis, planning and the like. The synthesis problem is intractable unless long-standing complexity-theoretic conjectures are falsified. Fortunately, polynomial-time synthesis algorithms can be designed if \varphi is represented in special normal forms. In this talk, we present some such normal forms, including those that were originally studied in AI and formal verification, and others like Synthesis Negation Normal Form (SynNNF) and Subset And-Unrealizable Normal Form (SAUNF) that have arisen from our study of synthesis. We discuss properties of and relations between these normal forms, and show that every universal representation that admits polynomial-time synthesis is polynomially reducible to SAUNF. We also sketch the idea behind compilation algorithms that convert a Boolean specification given as a circuit to SynNNF or SAUNF. We conclude with empirical evidence that shows that such compilation algorithms hold promise in practice.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 — 10:30</td>
+                                    <td>Coffee/tea break</td>
+                                    <td></td>
+                                </tr>
 
+                                <tr>
+                                    <td>10:30 — 11:30</td>
+                                    <td>Invited talk 6: Olaf Beyersdorff</td>
+                                    <td><label for="details8" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details8" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Proof complexity of quantified Boolean formulas</strong><br>
+                                            <p>Abstract: Quantified Boolean formulas (QBF) have been intensely investigated in the past two decades, both from a practical point of view (QBF solving) as well as from a theoretical perspective (QBF proof complexity) with many fruitful connections between the two fields.</p>
+                                            <p>In this talk I will survey recent results from QBF proof complexity and explain relevant proof systems and lower bound techniques. Particular emphasis will be laid on the connections between QBF proof complexity and circuit complexity, whereby many lower bounds for QBF proof size can be obtained via circuit size lower bounds.</p>
+                                            <p>A second thread will be devoted to modelling QBF solvers by QBF proof systems. This sheds light on the relative strength of different QBF solving paradigms.</p>
+                                            <p>The talk is based on joint work with many coauthors over the last year. In particular, many results have been obtained in collaboration with Meena Mahajan.</p>
+                                        </div>
+                                    </td>
+                                </tr>
 
+                                <tr>
+                                    <td>11:30 — 12:30</td>
+                                    <td>Invited talk 7: Susanna Rezende</td>
+                                    <td><label for="details9" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details9" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> TBA<br>
+                                            <p>Abstract: TBA</p>
+                                        </div>
+                                    </td>
+                                </tr>
 
-<td>Coffee/tea break</td>
-</tr>
-<tr><td>10.30 – 11.30</td>
-    <td>Invited talk 6: Olaf Beyersdorff</td>
-</tr>
-<tr><td>11.30 – 12.30</td>
-<td>Invited talk 7: Susanna Rezende</td>
-</tr>
-<tr><td>12.30 – 14.00</td>
-
-
-<td>Lunch break</td>
-<tr><td>14.00 – 14:30</td>
-<td>Contributed talk 3: <a href="https://www.imsc.res.in/~anilsh/">Anil Shukla</a></td>
-</tr>	
-<tr><td>14:30 – 15.00</td>
-
-<td>Contributed talk 4: <a href="https://sites.google.com/iitgn.ac.in/dharathakkar">Dhara Thakkar</a></td>
-</tr>
-<tr><td>15:00-15:30</td><td>Coffee/tea break</td></tr>
-<tr><td>15.30 – 16.00</td>
-<td>Contributed talk 5: <a href="https://sites.google.com/site/anujtawari">Anuj Tawari</a></td>
-<tr><td>16:00 – 16.30</td>
-<td>Contributed talk 6: <a href="https://preronac.bitbucket.io/">Prerona Chatterjee</a></td>
-</tr>
-
-<tr><td>16:30 - 17.30</td>
-
-<td>Invited talk 8: Jakob Nordstrom</td></tr>
-
-
-                        </tbody>
+                                <tr>
+                                    <td>12:30 — 14:00</td>
+                                    <td>Lunch break</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14:00 — 14:30</td>
+                                    <td>Contributed talk 3: <a href="https://www.imsc.res.in/~anilsh/">Anil Shukla</a></td>
+                                    <td><label for="details10" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details10" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Extending Merge Resolution to a Family of QBF-Proof Systems</strong><br>
+                                            <p>Abstract: Merge Resolution (MRes [Beyersdorff, Blinkhorn, and Mahajan, J. Autom. Reason.'2021]) is a recently introduced proof system for false quantified Boolean formulas (QBFs). Unlike other known QBF proof systems, it builds winning strategies for the universal player (countermodels) within the proofs as merge maps. Merge maps are deterministic branching programs in which isomorphism checking is efficient, as a result MRes is a polynomial time verifiable proof system.</p>
+                                            <p>We introduce a family of proof systems MRes-R in which the information of countermodels are stored in any pre-fixed complete representation R. Hence, corresponding to each possible complete representation R, we have a sound and refutationally complete QBF-proof system in MRes-R. To handle these arbitrary representations, we introduce consistency checking rules in MRes-R instead of the isomorphism checking in MRes. As a result these proof systems are not polynomial time verifiable.</p>
+                                            <p>We relate these new systems with the implicit proof system from the algorithm in [Blinkhorn, Peitl. and Slivovsky, SAT.'2021], which was designed to solve DQBFs (Dependency QBFs) using MRes like clause-strategy pairs. We use the OBDD (Ordered Binary Decision Diagrams) representation and deduce that ordered versions of the proof systems in MRes-R along with some additional restrictions are polynomial time verifiable.</p>
+                                            <p>Demonstrating the strength of these systems, we show that the regular versions of the systems in MRes-R are exponentially stronger than regular MRes. We also lift the lower bound result of regular MRes ([Beyersdorff et al. FSTTCS.'2020]) by showing that the completion principle formulas (CR_n) from [Jonata and Marques-Silva, Theor. Comput. Sci.'2015] which are shown to be hard for regular MRes in [Beyersdorff et al. FSTTCS.'2020], are also hard for any regular proof system in MRes-R.</p>
+                                            <p>This is a joint work with Sravanthi Chede (IIT Ropar).</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>14:30 — 15:00</td>
+                                    <td>Contributed talk 4: <a href="https://sites.google.com/iitgn.ac.in/dharathakkar">Dhara Thakkar</a></td>
+                                    <td><label for="details11" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details11" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>On Computing Optimal Representations of Finite Groups</strong><br>
+                                            <p>Abstract: There are several ways to represent a group as an input to an algorithm, including the generator-realtor representation, the black-box group representation, the matrix group representation, the permutation group representation, and the Cayley table representation. The choice of representation significantly impacts the ease or difficulty of computational problems in groups. While studying algorithms for group theoretical problems, it is natural to study efficient representations of groups.</p>
+                                            <p>In this talk, I will discuss two optimal representations of finite groups. More precisely, I will present (1) a polynomial time algorithm to find a minimum generating set of a group and (2) a randomized polynomial time algorithm that, given a group G without abelian normal subgroups, computes the smallest m such that G ≤ Sm.</p>
+                                            <p>The talk is based on the joint work with Bireswar Das, and Andrea Lucchini.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15:00 — 15:30</td>
+                                    <td>Coffee/tea break</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15:30 — 16:00</td>
+                                    <td>Contributed talk 5: <a href="https://sites.google.com/site/anujtawari">Anuj Tawari</a></td>
+                                    <td><label for="details12" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details12" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Exactly k MSTs: How many vertices suffice?</strong><br>
+                                            <p>Abstract: In this work, we study the problem of finding a weighted undirected graph with exactly $k$ minimum spanning trees (MSTs, in short) while minimizing the number of vertices. While finding a graph with $k$ MSTs is easy, finding such a graph with the minimum number of vertices remains an interesting open problem. In this work, we prove the following results which make further progress on this problem:</p>
+                                            <p>1. Large weights do not help in constructing a minimal weighted graph with a prime number of minimum spanning trees.</p>
+                                            <p>2. For $n\geq 6$ and $1 \leq k \leq n^2$, $n$ vertices suffice for constructing a graph with $k$ minimum spanning trees.</p>
+                                            <p>I will also discuss connections with related algebraic problems such as finding a small, symmetric matrix with a prescribed value of its determinant and bounded integer entries.</p>
+                                            <p>(Joint work with Apratim Dutta, Rahul Muthu, V. Sunitha).</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>16:00 — 16:30</td>
+                                    <td>Contributed talk 6: <a href="https://preronac.bitbucket.io/">Prerona Chatterjee</a></td>
+                                    <td><label for="details13" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details13" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> TBA<br>
+                                            <p>Abstract: TBA</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>16:30 — 17:30</td>
+                                    <td>Invited talk 8: Jakob Nordstrom</td>
+                                    <td><label for="details14" class="toggle-label"><i class="fa fa-chevron-down"></i></label></td>
+                                </tr>
+                                <tr class="details">
+                                    <td colspan="3">
+                                        <input type="checkbox" id="details14" class="toggle-input">
+                                        <div class="toggle-content">
+                                            <em>Title:</em> <strong>Colouring is Hard on Average for Polynomial Calculus and Nullstellensatz</strong><br>
+                                            <p>Abstract: We prove that polynomial calculus (and hence also Nullstellensatz) over any field requires linear degree to refute that sparse random regular graphs, as well as sparse Erdős-Rényi random graphs, are 3-colourable. Using the known relation between size and degree for polynomial calculus proofs, this implies strongly exponential lower bounds on proof size. It also means that algorithms based on Hilbert's Nullstellensatz or Gröbner bases must require exponential running time for almost all such graphs.</p>
+                                            <p>This is joint work with Jonas Conneryd, Susanna F. de Rezende, Shuo Pang, and Kilian Risse that appeared at FOCS 2023.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     
@@ -332,6 +526,37 @@
             </div>
         </div>
     </section>
+
+    <style>
+    .toggle-input {
+        display: none;
+    }
+
+    .toggle-label {
+        cursor: pointer;
+    }
+
+    .toggle-input:checked + .toggle-content {
+        max-height: 1000px; /* Adjust as needed */
+        transition: all 1.2s ease;
+    }
+
+    .toggle-content {
+        max-height: 0;
+        overflow: hidden;
+        /* transition: all 1.2s ease; */
+    }
+
+    .details {
+        padding: 0;
+        margin: 0;
+    }
+
+    .details td {
+        padding: 0;
+        margin: 0;
+    }
+    </style>
 
         <!-- Organizers Section -->
         <section id="organizers" class="section">
@@ -443,7 +668,11 @@
 	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
+    <script>
+        $(".navbar-collapse a").click(function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+    </script>
 	
 
 </body>
