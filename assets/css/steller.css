@@ -78,6 +78,10 @@ body {
   outline: 0 !important;
 }
 
+#home {
+  min-height: 100vh;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
